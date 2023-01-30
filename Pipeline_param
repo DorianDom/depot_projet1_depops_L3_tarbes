@@ -18,7 +18,8 @@ pipeline {
                     echo "Sonar password : ${params.SONAR_SERVER_PWD}"
                 }
             }
-            stage ('BUILD') {
+        }
+        stage ('BUILD') {
                 steps {
                    echo 'BUILD'
                 }
@@ -33,6 +34,5 @@ pipeline {
                     echo 'DEPLOY'
                  }
             }
-        }
    }
 }
