@@ -20,17 +20,17 @@ pipeline {
             }
             stage ('BUILD') {
                 steps {
-                   echo "BUILD"
+                   echo 'BUILD'
                 }
             }
             stage ('TEST') {
                 steps {
-                    echo "TEST"
+                    echo 'TEST'
                  }
             }
             stage ('DEPLOY'){
                 steps {
-                    echo "DEPLOY"
+                    echo 'DEPLOY'
                  }
             }
         }
